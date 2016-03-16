@@ -14,15 +14,16 @@ import com.hiagg.blocks.ModBlocks;
 import com.hiagg.creativetabs.ModTabs;
 import com.hiagg.hiaggium.CraftingManager;
 import com.hiagg.item.ModItems;
+import com.hiagg.lib.RefStrings;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="hiaggium", name="Hiaggium v1", version="1.0.0.0")
+@Mod(modid=RefStrings.MODID, name=RefStrings.NAME, version=RefStrings.VERSION)
 public class Hiaggium {
     @Mod.EventHandler
-    public static void PreLoad(FMLPreInitializationEvent PreEvent) {
+    public static void PreLoad(FMLPreInitializationEvent event) {
         ModTabs.intialiseTabs();
         ModItems.mainRegistry();
         ModBlocks.mainRegistry();
@@ -34,7 +35,7 @@ public class Hiaggium {
     }
 
     @Mod.EventHandler
-    public static void PreLoad(FMLPostInitializationEvent PostEvent) {
+    public static void PostLoad(FMLPostInitializationEvent event) {
     }
 }
 
