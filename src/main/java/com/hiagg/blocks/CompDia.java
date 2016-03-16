@@ -8,17 +8,21 @@
  */
 package com.hiagg.blocks;
 
+import com.hiagg.creativetabs.ModTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class CompDia
-extends Block {
+public class CompDia extends Block {
     protected CompDia(Material mineral) {
         super(mineral);
-        this.setHardness(45.0f);
-        this.setResistance(270.0f);
-        this.setHarvestLevel("pickaxe", 3);
-        this.setStepSound(soundTypeStone);
+        setBlockName("CompDia");
+        setCreativeTab(ModTabs.tabBlocks);
+        setBlockTextureName("hiaggium:CompressedDiamondBlock");
+        setHardness(45.0f);
+        setResistance(270.0f);
+        setHarvestLevel("pickaxe", 3);
+        setStepSound(soundTypeStone);
     }
 
     public static void mainRegistry() {

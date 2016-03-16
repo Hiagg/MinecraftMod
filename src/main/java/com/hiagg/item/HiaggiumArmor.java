@@ -35,9 +35,9 @@ extends ItemArmor {
 
     public String getArmorTexture(ItemStack stack, Entity entity, String type) {
         if (this.renderIndex == 2) {
-            return "tutorialmod:textures/models/armor/hiaggium_layer_2.png";
+            return "hiaggium:textures/models/armor/hiaggium_layer_2.png";
         }
-        return "tutorialmod:textures/models/armor/hiaggium_layer_1.png";
+        return "hiaggium:textures/models/armor/hiaggium_layer_1.png";
     }
 
     public void onArmorTick(World world, EntityPlayer player, ItemStack stack) {
@@ -46,7 +46,6 @@ extends ItemArmor {
             player.isImmuneToFire();
             player.canBreatheUnderwater();
             player.fireResistance = 2000000;
-            player.setHealth(100000.0f);
             player.capabilities.allowFlying = true;
             player.stepHeight = 1;
         }

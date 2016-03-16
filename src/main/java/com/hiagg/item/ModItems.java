@@ -37,14 +37,15 @@ import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
-    public static Item.ToolMaterial Debug = EnumHelper.addToolMaterial("Debug", 9999, -1, 8.0f, 3.0f, 10);
-    public static ItemArmor.ArmorMaterial Hiagg = EnumHelper.addArmorMaterial("Hiagg", -1, new int[]{20, 20, 20, 20}, 255);
-    public static Item.ToolMaterial HiaggTools = EnumHelper.addToolMaterial("HiaggTools", 90001, -1, 2.0E9f, 9.1215224E13f, 500);
-    public static Item.ToolMaterial UnrefHiaggIngot = EnumHelper.addToolMaterial("Unrefined Hiaggium Ingot", 9001, 15000, 20.0f, 12.0f, 35);
-    public static ItemArmor.ArmorMaterial UnrefHiaggArmor = EnumHelper.addArmorMaterial("Unrefined Hiaggium", 20000, new int[]{12, 20, 16, 8}, 35);
+	// DO NOT USE EXPONENTS ON MATERIALS - ADD INSTANT KILLING/BREAKING CODE TO TOOLS. CAUSES INCOMPATIBILITIES
+    public static Item.ToolMaterial Debug = EnumHelper.addToolMaterial("Debug", 10, -1, 8.0f, 3.0f, 10);
+    public static ItemArmor.ArmorMaterial Hiagg = EnumHelper.addArmorMaterial("Hiagg", -1, new int[]{5, 9, 7, 4}, 255);
+    public static Item.ToolMaterial HiaggTools = EnumHelper.addToolMaterial("HiaggTools", 4, -1, 10.0F, 60.0F, 500);
+    public static Item.ToolMaterial UnrefHiaggIngot = EnumHelper.addToolMaterial("Unrefined Hiaggium Ingot", 4, 15000, 20.0f, 12.0f, 35);
+    public static ItemArmor.ArmorMaterial UnrefHiaggArmor = EnumHelper.addArmorMaterial("Unrefined Hiaggium", 20000, new int[]{5, 9, 7, 4}, 35); //Infinite protection armor adds up to 25
     public static ItemArmor.ArmorMaterial HiaggiumA = EnumHelper.addArmorMaterial("HiaggiumA", -1, new int[]{12, 20, 16, 8}, 50);
-    public static Item.ToolMaterial HiaggiumT = EnumHelper.addToolMaterial("HiaggiumT", 9000001, -1, 5.0E8f, 4.2013377E10f, 50);
-    public static Item.ToolMaterial ElementalT = EnumHelper.addToolMaterial("ElementalT", 6, 5000, 12.0f, 23.5f, 30);
+    public static Item.ToolMaterial HiaggiumT = EnumHelper.addToolMaterial("HiaggiumT", 4, -1, -1, 10.0f, 50);
+    public static Item.ToolMaterial ElementalT = EnumHelper.addToolMaterial("ElementalT", 4, 5000, 12.0f, 23.5f, 30);
     // Test stuff
     public static Item TestBow;
     public static Item SkyStick;
@@ -126,39 +127,39 @@ public class ModItems {
     }
 
     public static void registerItem() {
-        GameRegistry.registerItem((Item)DebugPick, DebugPick.getUnlocalizedName());
-        GameRegistry.registerItem((Item)DupePick, DupePick.getUnlocalizedName());
-        GameRegistry.registerItem((Item)SkyStick, SkyStick.getUnlocalizedName());
-        GameRegistry.registerItem((Item)OpApple, OpApple.getUnlocalizedName());
-        GameRegistry.registerItem((Item)MeltCompDia, MeltCompDia.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HardRod, HardRod.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiagg, UnrefHiagg.getUnlocalizedName());
-        GameRegistry.registerItem((Item)Hiaggium, Hiaggium.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggPick, UnrefHiaggPick.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggShovel, UnrefHiaggShovel.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggAxe, UnrefHiaggAxe.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggSword, UnrefHiaggSword.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggHoe, UnrefHiaggHoe.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggHelmet, UnrefHiaggHelmet.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggChestplate, UnrefHiaggChestplate.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggLeggings, UnrefHiaggLeggings.getUnlocalizedName());
-        GameRegistry.registerItem((Item)UnrefHiaggBoots, UnrefHiaggBoots.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumPick, HiaggiumPick.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumSword, HiaggiumSword.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumShovel, HiaggiumShovel.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumAxe, HiaggiumAxe.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumHoe, HiaggiumHoe.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumHelmet, HiaggiumHelmet.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumChestplate, HiaggiumChestplate.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumLeggings, HiaggiumLeggings.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggiumBoots, HiaggiumBoots.getUnlocalizedName());
-        GameRegistry.registerItem((Item)IceSword, IceSword.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggsHelmet, HiaggsHelmet.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggsChestplate, HiaggsChestplate.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggsLeggings, HiaggsLeggings.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggsBoots, HiaggsBoots.getUnlocalizedName());
-        GameRegistry.registerItem((Item)HiaggsSword, HiaggsSword.getUnlocalizedName());
-        GameRegistry.registerItem((Item)TestBow, TestBow.getUnlocalizedName());
+        GameRegistry.registerItem(DebugPick, DebugPick.getUnlocalizedName());
+        GameRegistry.registerItem(DupePick, DupePick.getUnlocalizedName());
+        GameRegistry.registerItem(SkyStick, SkyStick.getUnlocalizedName());
+        GameRegistry.registerItem(OpApple, OpApple.getUnlocalizedName());
+        GameRegistry.registerItem(MeltCompDia, MeltCompDia.getUnlocalizedName());
+        GameRegistry.registerItem(HardRod, HardRod.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiagg, UnrefHiagg.getUnlocalizedName());
+        GameRegistry.registerItem(Hiaggium, Hiaggium.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggPick, UnrefHiaggPick.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggShovel, UnrefHiaggShovel.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggAxe, UnrefHiaggAxe.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggSword, UnrefHiaggSword.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggHoe, UnrefHiaggHoe.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggHelmet, UnrefHiaggHelmet.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggChestplate, UnrefHiaggChestplate.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggLeggings, UnrefHiaggLeggings.getUnlocalizedName());
+        GameRegistry.registerItem(UnrefHiaggBoots, UnrefHiaggBoots.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumPick, HiaggiumPick.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumSword, HiaggiumSword.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumShovel, HiaggiumShovel.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumAxe, HiaggiumAxe.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumHoe, HiaggiumHoe.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumHelmet, HiaggiumHelmet.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumChestplate, HiaggiumChestplate.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumLeggings, HiaggiumLeggings.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggiumBoots, HiaggiumBoots.getUnlocalizedName());
+        GameRegistry.registerItem(IceSword, IceSword.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggsHelmet, HiaggsHelmet.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggsChestplate, HiaggsChestplate.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggsLeggings, HiaggsLeggings.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggsBoots, HiaggsBoots.getUnlocalizedName());
+        GameRegistry.registerItem(HiaggsSword, HiaggsSword.getUnlocalizedName());
+        GameRegistry.registerItem(TestBow, TestBow.getUnlocalizedName());
     }
 }
 

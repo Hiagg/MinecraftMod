@@ -8,6 +8,8 @@
  */
 package com.hiagg.blocks;
 
+import com.hiagg.creativetabs.ModTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -15,10 +17,13 @@ public class StarBlock
 extends Block {
     protected StarBlock(Material p_i45394_1_) {
         super(p_i45394_1_);
-        this.setHardness(7.0f);
-        this.setResistance(80.0f);
-        this.setHarvestLevel("pickaxe", 3);
-        this.setStepSound(soundTypeStone);
+        setBlockName("StarBlock");
+        setCreativeTab(ModTabs.tabBlocks);
+        setBlockTextureName("hiaggium:StarBlock");
+        setHardness(7.0f);
+        setResistance(80.0f);
+        setHarvestLevel("pickaxe", 3);
+        setStepSound(soundTypeStone);
     }
 
     public static void mainRegistry() {

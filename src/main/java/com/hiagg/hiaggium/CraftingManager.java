@@ -26,36 +26,169 @@ public class CraftingManager {
         CraftingManager.addSmeltingRec();
     }
 
-    public static void addCraftingRec() {
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModBlocks.CompDia, 1), new Object[]{"AAA", "AAA", "AAA", 'A', Blocks.diamond_block});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HardRod, 1), new Object[]{"ABA", "ABA", "ABA", 'A', Blocks.obsidian, 'B', Items.blaze_rod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggPick, 1), new Object[]{"AAA", " B ", " B ", 'A', ModItems.UnrefHiagg, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggAxe, 1), new Object[]{"AA", "AB", " B", 'A', ModItems.UnrefHiagg, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggShovel, 1), new Object[]{"A", "B", "B", 'A', ModItems.UnrefHiagg, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggSword, 1), new Object[]{"A", "A", "B", 'A', ModItems.UnrefHiagg, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggHoe, 1), new Object[]{"AA", " B", " B", 'A', ModItems.UnrefHiagg, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumPick, 1), new Object[]{"AAA", " B ", " B ", 'A', ModItems.Hiaggium, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumSword, 1), new Object[]{"A", "A", "B", 'A', ModItems.Hiaggium, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumShovel, 1), new Object[]{"A", "B", "B", 'A', ModItems.Hiaggium, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumAxe, 1), new Object[]{"AA", "AB", " B", 'A', ModItems.Hiaggium, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumHoe, 1), new Object[]{"AA", " B", " B", 'A', ModItems.Hiaggium, 'B', ModItems.HardRod});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggHelmet, 1), new Object[]{"AAA", "A A", 'A', ModItems.UnrefHiagg});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggChestplate, 1), new Object[]{"A A", "AAA", "AAA", 'A', ModItems.UnrefHiagg});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggLeggings, 1), new Object[]{"AAA", "A A", "A A", 'A', ModItems.UnrefHiagg});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.UnrefHiaggBoots, 1), new Object[]{"A A", "A A", 'A', ModItems.UnrefHiagg});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumHelmet, 1), new Object[]{"AAA", "A A", 'A', ModItems.Hiaggium});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumChestplate, 1), new Object[]{"A A", "AAA", "AAA", 'A', ModItems.Hiaggium});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumLeggings, 1), new Object[]{"AAA", "A A", "A A", 'A', ModItems.Hiaggium});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModItems.HiaggiumBoots, 1), new Object[]{"A A", "A A", 'A', ModItems.Hiaggium});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModBlocks.CompEmerald, 1), new Object[]{"AAA", "AAA", "AAA", 'A', Blocks.emerald_block});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModBlocks.CompDEmerald, 1), new Object[]{"ABA", "BAB", "ABA", 'A', ModBlocks.CompEmerald, 'B', ModBlocks.CompDia});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModBlocks.StarBlock, 1), new Object[]{"AAA", "AAA", "AAA", 'A', Items.nether_star});
-        GameRegistry.addRecipe((ItemStack)new ItemStack(ModBlocks.DEStarBlock, 1), new Object[]{"AAA", "ABA", "AAA", 'A', ModBlocks.CompDEmerald, 'B', ModBlocks.StarBlock});
-        GameRegistry.addShapelessRecipe((ItemStack)new ItemStack(ModItems.OpApple, 64), new Object[]{Items.apple});
+    public static void addCraftingRec() { //X in these means NULL (No item, just helps visualize the recipes)
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.CompDia, 1),
+        		new Object[]{
+        			"AAA",
+        			"AAA",
+        			"AAA", 'A', Blocks.diamond_block});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HardRod, 1),
+        		new Object[]{
+        			"ABA",
+        			"ABA",
+        			"ABA",
+        			'A', Blocks.obsidian,
+        			'B', Items.blaze_rod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggPick, 1),
+        		new Object[]{
+        			"AAA",
+        			"XBX",
+        			"XBX",
+        			'A', ModItems.UnrefHiagg,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggAxe, 1),
+        		new Object[]{
+        			"AAX",
+        			"ABX",
+        			"XBX",
+        			'A', ModItems.UnrefHiagg,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggShovel, 1),
+        		new Object[]{
+        			"XAX",
+        			"XBX",
+        			"XBX",
+        			'A', ModItems.UnrefHiagg,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggSword, 1),
+        		new Object[]{
+        			"XAX",
+        			"XAX",
+        			"XBX",
+        			'A', ModItems.UnrefHiagg,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggHoe, 1),
+        		new Object[]{
+        			"AAX",
+        			"XBX",
+        			"XBX",
+        			'A', ModItems.UnrefHiagg,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumPick, 1),
+        		new Object[]{
+        			"AAA",
+        			"XBX",
+        			"XBX",
+        			'A', ModItems.Hiaggium,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumSword, 1),
+        		new Object[]{
+        			"XAX",
+        			"XAX",
+        			"XBX",
+        			'A', ModItems.Hiaggium,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumShovel, 1),
+        		new Object[]{
+        			"XAX",
+        			"XBX",
+        			"XBX",
+        			'A', ModItems.Hiaggium,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumAxe, 1),
+        		new Object[]{
+        			"AAX",
+        			"ABX",
+        			"XBX",
+        			'A', ModItems.Hiaggium,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumHoe, 1),
+        		new Object[]{
+        			"AAX",
+        			"XBX",
+        			"XBX",
+        			'A', ModItems.Hiaggium,
+        			'B', ModItems.HardRod});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggHelmet, 1),
+        		new Object[]{
+        			"AAA",
+        			"AXA",
+        			"XXX",
+        			'A', ModItems.UnrefHiagg});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggChestplate, 1),
+        		new Object[]{
+        			"AXA",
+        			"AAA",
+        			"AAA",
+        			'A', ModItems.UnrefHiagg});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggLeggings, 1),
+        		new Object[]{
+        			"AAA",
+        			"AXA",
+        			"AXA",
+        			'A', ModItems.UnrefHiagg});
+        GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggBoots, 1),
+        		new Object[]{
+        			"AXA",
+        			"AXA",
+        			'A', ModItems.UnrefHiagg});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumHelmet, 1),
+        		new Object[]{
+        			"AAA",
+        			"AXA",
+        			"XXX",
+        			'A', ModItems.Hiaggium});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumChestplate, 1),
+        		new Object[]{
+        			"AXA",
+        			"AAA",
+        			"AAA",
+        			'A', ModItems.Hiaggium});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumLeggings, 1),
+        		new Object[]{
+        			"AAA",
+        			"AXA",
+        			"AXA",
+        			'A', ModItems.Hiaggium});
+        GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumBoots, 1),
+        		new Object[]{
+        			"AXA",
+        			"AXA",
+        			'A', ModItems.Hiaggium});
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.CompEmerald, 1),
+        		new Object[]{
+        			"AAA",
+        			"AAA",
+        			"AAA",
+        			'A', Blocks.emerald_block});
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.CompDEmerald, 1),
+        		new Object[]{
+        			"ABA",
+        			"BAB",
+        			"ABA", 
+        			'A', ModBlocks.CompEmerald,
+        			'B', ModBlocks.CompDia});
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.StarBlock, 1),
+        		new Object[]{
+        			"AAA",
+        			"AAA",
+        			"AAA",
+        			'A', Items.nether_star});
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.DEStarBlock, 1),
+        		new Object[]{
+        			"AAA",
+        			"ABA",
+        			"AAA",
+        			'A', ModBlocks.CompDEmerald,
+        			'B', ModBlocks.StarBlock});
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.OpApple, 64),
+        		new Object[]{
+        			Items.apple
+        					  });
     }
 
     public static void addSmeltingRec() {
-        GameRegistry.addSmelting((Block)ModBlocks.CompDia, (ItemStack)new ItemStack(ModItems.MeltCompDia, 1), (float)100.0f);
+        GameRegistry.addSmelting(ModBlocks.CompDia, new ItemStack(ModItems.MeltCompDia, 1), (float)100.0f);
     }
 }
 

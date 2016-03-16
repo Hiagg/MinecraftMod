@@ -13,10 +13,9 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class CreativeTabBlocks
-extends CreativeTabs {
-    public CreativeTabBlocks(String lable) {
-        super(lable);
+public class CreativeTabBlocks extends CreativeTabs {
+    public CreativeTabBlocks(String label) {
+        super(label);
     }
     
 	public Item getTabIconItem() {

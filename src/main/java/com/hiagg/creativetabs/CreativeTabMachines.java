@@ -11,10 +11,9 @@ import com.hiagg.item.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class CreativeTabMachines
-extends CreativeTabs {
-    public CreativeTabMachines(String lable) {
-        super(lable);
+public class CreativeTabMachines extends CreativeTabs {
+    public CreativeTabMachines(String label) {
+        super(label);
     }
 
     public Item getTabIconItem() {

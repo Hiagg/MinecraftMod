@@ -21,6 +21,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid=RefStrings.MODID, name=RefStrings.NAME, version=RefStrings.VERSION)
+
 public class Hiaggium {
     @Mod.EventHandler
     public static void PreLoad(FMLPreInitializationEvent event) {
@@ -31,7 +32,7 @@ public class Hiaggium {
     }
 
     @Mod.EventHandler
-    public static void load(FMLInitializationEvent event) {
+    public static void Load(FMLInitializationEvent event) {
     }
 
     @Mod.EventHandler

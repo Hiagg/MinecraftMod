@@ -34,12 +34,12 @@ public class ModBlocks {
     }
 
     public static void initializeBlock() {
-        CompDia = new CompDia(Material.rock).setBlockName("CompDia").setCreativeTab(ModTabs.tabBlocks).setBlockTextureName("hiaggium:CompressedDiamondBlock");
-        CompEmerald = new CompEmerald(Material.rock).setBlockName("CompEmerald").setCreativeTab(ModTabs.tabBlocks).setBlockTextureName("hiaggium:CompressedEmerald");
-        CompDEmerald = new CompDEmerald(Material.rock).setBlockName("CompDEmerald").setCreativeTab(ModTabs.tabBlocks).setBlockTextureName("hiaggium:CompDEmerald");
-        StarBlock = new StarBlock(Material.rock).setBlockName("StarBlock").setCreativeTab(ModTabs.tabBlocks).setBlockTextureName("hiaggium:StarBlock");
-        DEStarBlock = new DEStarBlock(Material.rock).setBlockName("DEStarBlock").setCreativeTab(ModTabs.tabBlocks).setBlockTextureName("hiaggium:DEStarBlock");
-        TestMachine = new TestMachine(Material.iron).setBlockName("TestMachine").setCreativeTab(ModTabs.tabMachines).setBlockTextureName("hiaggium:TestMachine");
+        CompDia = new CompDia(Material.rock);
+        CompEmerald = new CompEmerald(Material.rock);
+        CompDEmerald = new CompDEmerald(Material.rock);
+        StarBlock = new StarBlock(Material.rock);
+        DEStarBlock = new DEStarBlock(Material.rock);
+        TestMachine = new TestMachine(Material.iron);
     }
 
     public static void registerItem() {

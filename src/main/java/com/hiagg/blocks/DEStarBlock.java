@@ -8,17 +8,21 @@
  */
 package com.hiagg.blocks;
 
+import com.hiagg.creativetabs.ModTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class DEStarBlock
-extends Block {
+public class DEStarBlock extends Block {
     protected DEStarBlock(Material p_i45394_1_) {
         super(p_i45394_1_);
-        this.setHardness(50.0f);
-        this.setResistance(500.0f);
-        this.setHarvestLevel("pickaxe", 4);
-        this.setStepSound(soundTypeStone);
+        setBlockName("DEStarBlock");
+        setCreativeTab(ModTabs.tabBlocks);
+        setBlockTextureName("hiaggium:DEStarBlock");
+        setHardness(50.0f);
+        setResistance(500.0f);
+        setHarvestLevel("pickaxe", 4);
+        setStepSound(soundTypeStone);
     }
 
     public static void mainRegistry() {

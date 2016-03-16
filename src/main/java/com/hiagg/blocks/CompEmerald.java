@@ -8,17 +8,21 @@
  */
 package com.hiagg.blocks;
 
+import com.hiagg.creativetabs.ModTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class CompEmerald
-extends Block {
+public class CompEmerald extends Block {
     protected CompEmerald(Material p_i45394_1_) {
         super(p_i45394_1_);
-        this.setHardness(45.0f);
-        this.setResistance(270.0f);
-        this.setHarvestLevel("pickaxe", 3);
-        this.setStepSound(soundTypeStone);
+        setBlockName("CompEmerald");
+        setCreativeTab(ModTabs.tabBlocks);
+        setBlockTextureName("hiaggium:CompressedEmerald");
+        setHardness(45.0f);
+        setResistance(270.0f);
+        setHarvestLevel("pickaxe", 3);
+        setStepSound(soundTypeStone);
     }
 
     public static void mainRegistry() {
