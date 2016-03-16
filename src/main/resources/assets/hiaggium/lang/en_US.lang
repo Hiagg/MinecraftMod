@@ -1,0 +1,45 @@
+item.UnrefHiagg.name=Unrefined Hiaggium Ingot
+item.Hiaggium.name=Hiaggium Ingot
+item.HardRod.name=Hardened Blaze Rod
+item.OpApple.name=Beacon Apple
+item.DupePick.name=Duplicating Pickaxe
+item.DebugPick.name=Debug Pickaxe
+item.MeltCompDia.name=Heated Compressed Diamond
+item.IceSword.name=Ice Sword
+item.UnrefHiaggHelmet.name=Unrefined Hiaggium Helmet
+item.UnrefHiaggChestplate.name=Unrefined Hiaggium Chestplate
+item.UnrefHiaggLeggings.name=Unrefined Hiaggium Leggings
+item.UnrefHiaggBoots.name=Unrefined Hiaggium Boots
+item.UnrefHiaggSword.name=Unrefined Hiaggium Sword
+item.UnrefHiaggPick.name=Unrefined Hiaggium Pickaxe
+item.UnrefHiaggAxe.name=Unrefined Hiaggium Axe
+item.UnrefHiaggShovel.name=Unrefined Hiaggium Shovel
+item.UnrefHiaggHoe.name=Unrefined Hiaggium Hoe
+item.HiaggiumHelmet.name=Hiaggium Helmet
+item.HiaggiumChestplate.name=Hiaggium Chestplate
+item.HiaggiumLeggings.name=Hiaggium Leggings
+item.HiaggiumBoots.name=Hiaggium Boots
+item.HiaggiumSword.name=Hiaggium Sword
+item.HiaggiumPick.name=Hiaggium Pickaxe
+item.HiaggiumAxe.name=Hiaggium Axe
+item.HiaggiumShovel.name=Hiaggium Shovel
+item.HiaggiumHoe.name=Hiaggium Hoe
+tile.CompDia.name=Compressed Block Of Diamond
+tile.CompEmerald.name=Compressed Block Of Emerald
+tile.CompDEmerald.name=Compressed Diamond/Emerald Block
+tile.StarBlock.name=Block Of Nether Stars
+tile.DEStarBlock.name=Diamond Emerald Star Block
+
+item.HiaggsHelmet.name=Hiagg's Helmet
+item.HiaggsChestplate.name=Hiagg's Chestplate
+item.HiaggsLeggings.name=Hiagg's Leggings
+item.HiaggsBoots.name=Hiagg's Boots
+item.HiaggsSword.name=Hiagg's Sword
+
+itemGroup.CraftingComponentsTab=Hiaggium Crafting Components
+itemGroup.ItemsTab=Hiaggium Items
+itemGroup.BlocksTab=Hiaggium Blocks
+itemGroup.GearTab=Hiaggium Gear
+itemGroup.MachinesTab=Hiaggium Machines
+
+item.TestBow.name=Testing Bow
