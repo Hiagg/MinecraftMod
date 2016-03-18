@@ -1,14 +1,3 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  cpw.mods.fml.common.registry.GameRegistry
- *  net.minecraft.block.Block
- *  net.minecraft.init.Blocks
- *  net.minecraft.init.Items
- *  net.minecraft.item.Item
- *  net.minecraft.item.ItemStack
- */
 package com.hiagg.hiaggium;
 
 import com.hiagg.blocks.ModBlocks;
@@ -55,16 +44,16 @@ public class CraftingManager {
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggShovel, 1),
         		new Object[]{
-        			"XAX",
-        			"XBX",
-        			"XBX",
+        			" A ",
+        			" B ",
+        			" B ",
         			'A', ModItems.UnrefHiagg,
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggSword, 1),
         		new Object[]{
-        			"XAX",
-        			"XAX",
-        			"XBX",
+        			" A ",
+        			" A ",
+        			" B ",
         			'A', ModItems.UnrefHiagg,
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggHoe, 1),
@@ -83,16 +72,16 @@ public class CraftingManager {
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumSword, 1),
         		new Object[]{
-        			"XAX",
-        			"XAX",
-        			"XBX",
+        			" A ",
+        			" A ",
+        			" B ",
         			'A', ModItems.Hiaggium,
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumShovel, 1),
         		new Object[]{
-        			"XAX",
-        			"XBX",
-        			"XBX",
+        			" A ",
+        			" B ",
+        			" B ",
         			'A', ModItems.Hiaggium,
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumAxe, 1),
@@ -191,4 +180,3 @@ public class CraftingManager {
         GameRegistry.addSmelting(ModBlocks.CompDia, new ItemStack(ModItems.MeltCompDia, 1), (float)100.0f);
     }
 }
-

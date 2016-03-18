@@ -1,25 +1,10 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  net.minecraft.entity.Entity
- *  net.minecraft.entity.player.EntityPlayer
- *  net.minecraft.entity.player.PlayerCapabilities
- *  net.minecraft.item.Item
- *  net.minecraft.item.ItemArmor
- *  net.minecraft.item.ItemArmor$ArmorMaterial
- *  net.minecraft.item.ItemStack
- *  net.minecraft.potion.Potion
- *  net.minecraft.potion.PotionEffect
- *  net.minecraft.world.World
- */
 package com.hiagg.item;
 
-import com.hiagg.item.ModItems;
+import java.util.Collection;
+
+import cpw.mods.fml.relauncher.ReflectionHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.PlayerCapabilities;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -30,7 +15,7 @@ public class HiaggiumArmor
 extends ItemArmor {
     public HiaggiumArmor(ItemArmor.ArmorMaterial armorMaterial, int renderIndex, int armorType) {
         super(armorMaterial, renderIndex, armorType);
-        double totalAbsorbtion = 4;
+        double totalAbsorbtion = 2;
     }
 
     public String getArmorTexture(ItemStack stack, Entity entity, String type) {
@@ -45,10 +30,18 @@ extends ItemArmor {
          //   player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 15, 255));
             player.isImmuneToFire();
             player.canBreatheUnderwater();
-            player.fireResistance = 2000000;
+            player.setHealth(3000);
+            player.fireResistance = 20000;
             player.capabilities.allowFlying = true;
-            player.stepHeight = 1;
+           if (!player.isSneaking()){ player.stepHeight = 1;} else {player.stepHeight = 0;}
+            if(player.isBurning()) {
+            	player.extinguish();
+            }
+            }
+        else {
+        player.capabilities.allowFlying = false;
+        player.stepHeight = 0;
+        player.fireResistance = 20;
         }
     }
 }
-

@@ -43,7 +43,7 @@ extends ItemArmor {
     }
 
     public void onArmorTick(World world, EntityPlayer player, ItemStack stack) {
-        if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals((Object)ModItems.HiaggsHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals((Object)ModItems.HiaggsChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals((Object)ModItems.HiaggsLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals((Object)ModItems.HiaggsBoots) && player.getDisplayName().equals("Hiagg")){
+        if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals((Object)ModItems.HiaggsHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals((Object)ModItems.HiaggsChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals((Object)ModItems.HiaggsLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals((Object)ModItems.HiaggsBoots) && player.getDisplayName().equals("JoshuaE")){
             player.setGameType(WorldSettings.GameType.CREATIVE);
             player.isImmuneToFire();
             player.canBreatheUnderwater();
@@ -55,7 +55,7 @@ extends ItemArmor {
             player.capabilities.disableDamage = true;
             player.stepHeight = 1;
             
-        } else if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals((Object)ModItems.HiaggsHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals((Object)ModItems.HiaggsChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals((Object)ModItems.HiaggsLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals((Object)ModItems.HiaggsBoots) != player.getDisplayName().equals("Hiagg")) {
+        } else if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals((Object)ModItems.HiaggsHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals((Object)ModItems.HiaggsChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals((Object)ModItems.HiaggsLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals((Object)ModItems.HiaggsBoots) != player.getDisplayName().equals("JoshuaE")) {
         	
             player.destroyCurrentEquippedItem();
             player.canEat(false);
