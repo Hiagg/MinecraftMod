@@ -13,6 +13,7 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -41,9 +42,13 @@ public class DupePick extends ItemPickaxe {
     	worldObj = player.worldObj;
     	itemObj = Item.getItemFromBlock(worldObj.getBlock(i, j, k));
     	//Add check for full inv
-    	player.inventory.addItemStackToInventory(new ItemStack(itemObj, 5));
+    	if(player.inventory.getFirstEmptyStack() == -1) {
+    	player.inventory.addItemStackToInventory(new ItemStack(itemObj, 5)); //CRASHES PLAYER ON FULL INV!
     	worldObj.setBlock(i, j, k, Blocks.air);
-    	
+    	}
+    	else {
+    		
+    	}
     	return true;
     }
 
