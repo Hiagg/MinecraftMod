@@ -43,3 +43,6 @@ itemGroup.GearTab=Hiaggium Gear
 itemGroup.MachinesTab=Hiaggium Machines
 
 item.TestBow.name=Testing Bow
+
+key.hiaggium.desc=Change Gamemode
+key.category.hiagg=Hiaggium Mods

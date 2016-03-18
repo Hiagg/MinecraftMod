@@ -14,7 +14,10 @@ import com.hiagg.blocks.ModBlocks;
 import com.hiagg.creativetabs.ModTabs;
 import com.hiagg.hiaggium.CraftingManager;
 import com.hiagg.item.ModItems;
+import com.hiagg.lib.KeyInputHandler;
 import com.hiagg.lib.RefStrings;
+
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -33,6 +36,7 @@ public class Hiaggium {
 
     @Mod.EventHandler
     public static void Load(FMLInitializationEvent event) {
+    	FMLCommonHandler.instance().bus().register(new KeyInputHandler());
     }
 
     @Mod.EventHandler
