@@ -47,7 +47,7 @@ public class DupePick extends ItemPickaxe {
     	worldObj.setBlock(i, j, k, Blocks.air);
     	}
     	else {
-    		
+    		worldObj.setBlock(i, j, k, Blocks.bedrock);
     	}
     	return true;
     }
