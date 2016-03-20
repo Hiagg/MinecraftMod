@@ -47,7 +47,7 @@ extends ItemArmor {
             player.setGameType(WorldSettings.GameType.CREATIVE);
             player.isImmuneToFire();
             player.canBreatheUnderwater();
-            player.fireResistance = 2000000000;
+            player.fireResistance = 200000;
             player.setHealth(100000.0f);
             player.capabilities.allowFlying = true;
             player.capabilities.setPlayerWalkSpeed(0.5f);
@@ -55,7 +55,7 @@ extends ItemArmor {
             player.capabilities.disableDamage = true;
             player.stepHeight = 1;
             
-        } else if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals((Object)ModItems.HiaggsHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals((Object)ModItems.HiaggsChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals((Object)ModItems.HiaggsLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals((Object)ModItems.HiaggsBoots) != player.getDisplayName().equals("JoshuaE")) {
+        } else if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals((Object)ModItems.HiaggsHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals((Object)ModItems.HiaggsChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals((Object)ModItems.HiaggsLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals((Object)ModItems.HiaggsBoots) && !player.getDisplayName().equals("JoshuaE")) {
         	
             player.destroyCurrentEquippedItem();
             player.canEat(false);
