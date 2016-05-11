@@ -7,10 +7,5 @@
 	<classpathentry kind="lib" path="C:/Users/Kristian/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Kristian/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar" sourcepath="C:/Users/Kristian/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/82604cfeb87b9ab70ed70aa19a137de8ceb21504/jinput-2.0.5-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Kristian/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.1/f58c5aabcef0e41718a564be9f8e412fff8db847/lwjgl-2.9.1.jar" sourcepath="C:/Users/Kristian/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.1/ccedb5b6f96913c6f78bc10249e747ded90baa51/lwjgl-2.9.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Kristian/Desktop/keybind.zip" sourcepath="C:/Users/Kristian/Desktop/keybind.src.zip">
-		<attributes>
-			<attribute name="source_encoding" value="UTF-8"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
