@@ -5,7 +5,7 @@ import com.hiagg.blocks.tile.TileEntityTestMachine;
 
 public class ModTileEntities {
 	
-	public void registerTileEntities() {
+	public static void registerTileEntities() {
 		GameRegistry.registerTileEntity(TileEntityTestMachine.class, "TestMachine");
 	}
 	

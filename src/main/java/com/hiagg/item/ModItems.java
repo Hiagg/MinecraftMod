@@ -40,11 +40,11 @@ public class ModItems {
 	// DO NOT USE EXPONENTS ON MATERIALS - ADD INSTANT KILLING/BREAKING CODE TO TOOLS. CAUSES INCOMPATIBILITIES
 	public static Item.ToolMaterial Debug = EnumHelper.addToolMaterial("Debug", 10, -1, 8.0f, 3.0f, 10);
     public static ItemArmor.ArmorMaterial Hiagg = EnumHelper.addArmorMaterial("Hiagg", -1, new int[]{5, 9, 7, 4}, 255);
-    public static Item.ToolMaterial HiaggTools = EnumHelper.addToolMaterial("HiaggTools", 5, -1, 10000.0F, 600000.0F, 500);
+    public static Item.ToolMaterial HiaggTools = EnumHelper.addToolMaterial("HiaggTools", 5, -1, 10000.0F, 12.0F, 500);
     public static Item.ToolMaterial UnrefHiaggIngot = EnumHelper.addToolMaterial("Unrefined Hiaggium Ingot", 4, 15000, 20.0f, 12.0f, 35);
     public static ItemArmor.ArmorMaterial UnrefHiaggArmor = EnumHelper.addArmorMaterial("Unrefined Hiaggium", 20000, new int[]{5, 9, 7, 4}, 35); //Infinite protection armor adds up to 25
     public static ItemArmor.ArmorMaterial HiaggiumA = EnumHelper.addArmorMaterial("HiaggiumA", -1, new int[]{12, 20, 16, 8}, 50);
-    public static Item.ToolMaterial HiaggiumT = EnumHelper.addToolMaterial("HiaggiumT", 5, -1, 10000.0f, 10000.0f, 50);
+    public static Item.ToolMaterial HiaggiumT = EnumHelper.addToolMaterial("HiaggiumT", 5, -1, 10000.0f, 31.5f, 50);
     public static Item.ToolMaterial ElementalT = EnumHelper.addToolMaterial("ElementalT", 5, 5000, 12.0f, 23.5f, 30);
     // Test stuff
     public static Item TestBow;

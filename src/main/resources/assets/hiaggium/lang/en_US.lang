@@ -29,6 +29,7 @@ tile.CompEmerald.name=Compressed Block Of Emerald
 tile.CompDEmerald.name=Compressed Diamond/Emerald Block
 tile.StarBlock.name=Block Of Nether Stars
 tile.DEStarBlock.name=Diamond Emerald Star Block
+tile.TestMachine.name=Testing Tile
 
 item.HiaggsHelmet.name=Hiagg's Helmet
 item.HiaggsChestplate.name=Hiagg's Chestplate

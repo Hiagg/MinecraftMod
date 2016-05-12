@@ -47,8 +47,8 @@ public class CraftingManager {
         			" A ",
         			" B ",
         			" B ",
-        			'A', ModItems.UnrefHiagg,
-        			'B', ModItems.HardRod});
+        			 'A', ModItems.UnrefHiagg,
+        			 'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggSword, 1),
         		new Object[]{
         			" A ",
@@ -75,15 +75,15 @@ public class CraftingManager {
         			" A ",
         			" A ",
         			" B ",
-        			'A', ModItems.Hiaggium,
-        			'B', ModItems.HardRod});
+        		 	 'A', ModItems.Hiaggium,
+        		 	 'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumShovel, 1),
         		new Object[]{
         			" A ",
         			" B ",
         			" B ",
-        			'A', ModItems.Hiaggium,
-        			'B', ModItems.HardRod});
+        			 'A', ModItems.Hiaggium,
+        			 'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.HiaggiumAxe, 1),
         		new Object[]{
         			"AAX",
@@ -96,7 +96,7 @@ public class CraftingManager {
         			"AAX",
         			"XBX",
         			"XBX",
-        			'A', ModItems.Hiaggium,
+        		    'A', ModItems.Hiaggium,
         			'B', ModItems.HardRod});
         GameRegistry.addRecipe(new ItemStack(ModItems.UnrefHiaggHelmet, 1),
         		new Object[]{
@@ -172,8 +172,7 @@ public class CraftingManager {
         			'B', ModBlocks.StarBlock});
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.OpApple, 64),
         		new Object[]{
-        			Items.apple
-        					  });
+        			Items.apple });
     }
 
     public static void addSmeltingRec() {
