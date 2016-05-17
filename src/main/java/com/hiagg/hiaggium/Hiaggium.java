@@ -2,7 +2,6 @@ package com.hiagg.hiaggium;
 
 import com.hiagg.blocks.ModBlocks;
 import com.hiagg.creativetabs.ModTabs;
-import com.hiagg.hiaggium.CraftingManager;
 import com.hiagg.item.ModItems;
 import com.hiagg.lib.KeyInputHandler;
 import com.hiagg.lib.RefStrings;

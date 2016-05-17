@@ -1,5 +1,13 @@
 package com.hiagg.blocks;
 
+import com.hiagg.blocks.tile.TileEntityTestMachine;
+import com.hiagg.creativetabs.ModTabs;
+import com.hiagg.hiaggium.Hiaggium;
+import com.hiagg.lib.RefStrings;
+import com.hiagg.lib.Util;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -10,14 +18,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
-
-import com.hiagg.blocks.tile.TileEntityTestMachine;
-import com.hiagg.creativetabs.ModTabs;
-import com.hiagg.lib.RefStrings;
-import com.hiagg.lib.Util;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 public class TestMachine extends BlockContainer {
 	
@@ -64,7 +64,7 @@ public class TestMachine extends BlockContainer {
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int i1, float f1, float f2, float f3) {
         Util.postToDebug(EnumChatFormatting.YELLOW + "Received packet $192BlockUsed on block at " + x + y + z);
-    	
+        player.openGui(Hiaggium.instance, 0, world, x, y, z);
     	return false;
     }
 
