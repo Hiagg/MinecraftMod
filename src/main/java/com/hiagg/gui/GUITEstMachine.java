@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 
 public class GUITEstMachine extends GuiScreen{
 	
-	private ResourceLocation backgroundImage = new ResourceLocation(RefStrings.MODID + ":/textures/gui/MaterialInfuserGUI.png");
+	private ResourceLocation backgroundImage = new ResourceLocation(RefStrings.MODID + ":/textures/gui/TestMachineGUI.png");
 	 
 	 private int x, y, z;
 	 private EntityPlayer player;

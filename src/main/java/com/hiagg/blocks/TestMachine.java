@@ -13,6 +13,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.Container;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumChatFormatting;
@@ -63,9 +64,10 @@ public class TestMachine extends BlockContainer {
     
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int i1, float f1, float f2, float f3) {
+        if(world.isRemote) {
         Util.postToDebug(EnumChatFormatting.YELLOW + "Received packet $192BlockUsed on block at " + x + y + z);
-        player.openGui(Hiaggium.instance, 0, world, x, y, z);
-    	return false;
+        player.openGui(Hiaggium.instance, 0, world, x, y, z); }
+        return true;
     }
 
     @Override

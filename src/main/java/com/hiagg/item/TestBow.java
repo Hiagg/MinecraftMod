@@ -8,7 +8,6 @@ package com.hiagg.item;
 
 import net.minecraft.item.ItemBow;
 
-public class TestBow
-extends ItemBow {
+public class TestBow extends ItemBow {
 }
 

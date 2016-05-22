@@ -37,9 +37,9 @@ extends ItemArmor {
 
     public String getArmorTexture(ItemStack stack, Entity entity, String type) {
         if (this.renderIndex == 2) {
-            return "tutorialmod:textures/models/armor/hiagg_layer_2.png";
+            return "hiaggium:textures/models/armor/hiagg_layer_2.png";
         }
-        return "tutorialmod:textures/models/armor/hiagg_layer_1.png";
+        return "hiaggium:textures/models/armor/hiagg_layer_1.png";
     }
 
     public void onArmorTick(World world, EntityPlayer player, ItemStack stack) {

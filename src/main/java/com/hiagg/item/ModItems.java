@@ -97,7 +97,7 @@ public class ModItems {
         SkyStick = new Item().setUnlocalizedName("SkyStick");
         OpApple = new Item().setUnlocalizedName("OpApple").setCreativeTab(ModTabs.tabItems).setTextureName("hiaggium:Err");
         MeltCompDia = new Item().setUnlocalizedName("MeltCompDia").setCreativeTab(ModTabs.tabCraftingComponents).setTextureName("hiaggium:Err");
-        UnrefHiagg = new Item().setUnlocalizedName("UnrefHiagg").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:UnrefHiaggiumm");
+        UnrefHiagg = new Item().setUnlocalizedName("UnrefHiagg").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:UnrefHiaggium");
         Hiaggium = new Item().setUnlocalizedName("Hiaggium").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:HiaggiumIngot");
         HardRod = new Item().setUnlocalizedName("HardRod").setCreativeTab(ModTabs.tabCraftingComponents).setTextureName("hiaggium:HardBlazeRod");
         UnrefHiaggPick = new UnrefHiaggPick(UnrefHiaggIngot);
@@ -121,7 +121,7 @@ public class ModItems {
         IceSword = new IceSword(ElementalT);
         HiaggsHelmet = new HiaggsArmor(Hiagg, 0, 0).setUnlocalizedName("HiaggsHelmet").setTextureName("hiaggium:HiaggsHelmet");
         HiaggsChestplate = new HiaggsArmor(Hiagg, 0, 1).setUnlocalizedName("HiaggsChestplate").setTextureName("hiaggium:HiaggsChestplate");
-        HiaggsLeggings = new HiaggsArmor(Hiagg, 0, 2).setUnlocalizedName("HiaggsLeggings").setTextureName("hiaggium:HiaggsLegginggs");
+        HiaggsLeggings = new HiaggsArmor(Hiagg, 0, 2).setUnlocalizedName("HiaggsLeggings").setTextureName("hiaggium:HiaggsLeggings");
         HiaggsBoots = new HiaggsArmor(Hiagg, 0, 3).setUnlocalizedName("HiaggsBoots").setTextureName("hiaggium:HiaggsBoots");
         HiaggsSword = new HiaggsSword(HiaggTools);
     }
