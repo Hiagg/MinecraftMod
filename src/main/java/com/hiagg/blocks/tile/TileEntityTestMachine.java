@@ -1,6 +1,6 @@
 package com.hiagg.blocks.tile;
 
-import ibxm.Player;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -13,10 +13,6 @@ public class TileEntityTestMachine extends TileEntity implements IInventory {
 	private ItemStack[] inventory;
 	private String customName = "Testing Bench";
 	private int pos;
-	
-	public void onBlockActivated(){
-		Player.openGUI;
-	}
 	
 	public TileEntityTestMachine() {
 		inventory = new ItemStack[getSizeInventory()];

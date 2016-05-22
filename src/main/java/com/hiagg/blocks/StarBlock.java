@@ -13,10 +13,9 @@ import com.hiagg.creativetabs.ModTabs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class StarBlock
-extends Block {
-    protected StarBlock(Material p_i45394_1_) {
-        super(p_i45394_1_);
+public class StarBlock extends Block {
+    public StarBlock() {
+        super(Material.rock);
         setBlockName("StarBlock");
         setCreativeTab(ModTabs.tabBlocks);
         setBlockTextureName("hiaggium:StarBlock");

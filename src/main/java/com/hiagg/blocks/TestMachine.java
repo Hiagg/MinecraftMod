@@ -26,8 +26,8 @@ public class TestMachine extends BlockContainer {
 	@SideOnly(Side.CLIENT)
 	private IIcon front;
 	
-	protected TestMachine(Material Metal) {
-		super(Metal);
+	public TestMachine() {
+		super(Material.iron);
 		setBlockName("TestMachine");
 		setCreativeTab(ModTabs.tabMachines);
 		//setBlockTextureName("hiaggium:TestMachine");

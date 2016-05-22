@@ -8,6 +8,7 @@ import com.hiagg.lib.RefStrings;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -16,7 +17,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class Hiaggium {
 	@Instance("hiagg")
-	 public static Hiaggium instance;
+	public static Hiaggium instance;
+	
     @Mod.EventHandler
     public static void PreLoad(FMLPreInitializationEvent event) {
         ModTabs.intialiseTabs();

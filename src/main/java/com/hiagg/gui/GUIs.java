@@ -1,8 +1,8 @@
 package com.hiagg.gui;
 
-public class gui {
+public class GUIs {
 	
-	public enum GUIs {
+	public enum GUInum {
 		TESTMACHINE
 	}
 

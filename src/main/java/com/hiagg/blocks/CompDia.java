@@ -14,8 +14,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class CompDia extends Block {
-    protected CompDia(Material mineral) {
-        super(mineral);
+    public CompDia() {
+        super(Material.rock);
         setBlockName("CompDia");
         setCreativeTab(ModTabs.tabBlocks);
         setBlockTextureName("hiaggium:CompressedDiamondBlock");

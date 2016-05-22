@@ -14,8 +14,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class CompDEmerald extends Block {
-    protected CompDEmerald(Material mineral) {
-        super(mineral);
+    public CompDEmerald() {
+        super(Material.rock);
         setBlockName("CompDEmerald");
         setCreativeTab(ModTabs.tabBlocks);
         setBlockTextureName("hiaggium:CompDEmerald");

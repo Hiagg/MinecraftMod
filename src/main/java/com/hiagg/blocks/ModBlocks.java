@@ -34,12 +34,12 @@ public class ModBlocks {
     }
 
     public static void initializeBlock() {
-        CompDia = new CompDia(Material.rock);
-        CompEmerald = new CompEmerald(Material.rock);
-        CompDEmerald = new CompDEmerald(Material.rock);
-        StarBlock = new StarBlock(Material.rock);
-        DEStarBlock = new DEStarBlock(Material.rock);
-        TestMachine = new TestMachine(Material.iron);
+        CompDia = new CompDia();
+        CompEmerald = new CompEmerald();
+        CompDEmerald = new CompDEmerald();
+        StarBlock = new StarBlock();
+        DEStarBlock = new DEStarBlock();
+        TestMachine = new TestMachine();
     }
 
     public static void registerItem() {

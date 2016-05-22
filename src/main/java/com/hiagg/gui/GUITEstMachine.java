@@ -16,7 +16,7 @@ public class GUITEstMachine extends GuiScreen{
 	 private World world;
 	 private int xSize, ySize;
 	 
-	 public void GuiInfuser(EntityPlayer player, World world, int x, int y, int z) {
+	 public GUITEstMachine(EntityPlayer player, World world, int x, int y, int z) {
 	  
 	  this.x = x;
 	  this.y = y;

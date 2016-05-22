@@ -14,8 +14,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class CompEmerald extends Block {
-    protected CompEmerald(Material p_i45394_1_) {
-        super(p_i45394_1_);
+    public CompEmerald() {
+        super(Material.rock);
         setBlockName("CompEmerald");
         setCreativeTab(ModTabs.tabBlocks);
         setBlockTextureName("hiaggium:CompressedEmerald");
