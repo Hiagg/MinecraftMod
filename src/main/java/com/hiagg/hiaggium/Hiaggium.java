@@ -2,6 +2,7 @@ package com.hiagg.hiaggium;
 
 import com.hiagg.blocks.ModBlocks;
 import com.hiagg.creativetabs.ModTabs;
+import com.hiagg.gui.GuiHandler;
 import com.hiagg.item.ModItems;
 import com.hiagg.lib.KeyInputHandler;
 import com.hiagg.lib.RefStrings;
@@ -12,11 +13,12 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid=RefStrings.MODID, name=RefStrings.NAME, version=RefStrings.VERSION)
 
 public class Hiaggium {
-	@Instance("hiagg")
+	@Instance("hiaggium")
 	public static Hiaggium instance;
 	
     @Mod.EventHandler
@@ -30,6 +32,7 @@ public class Hiaggium {
     @Mod.EventHandler
     public static void Load(FMLInitializationEvent event) {
     	FMLCommonHandler.instance().bus().register(new KeyInputHandler());
+        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
     }
 
     @Mod.EventHandler
