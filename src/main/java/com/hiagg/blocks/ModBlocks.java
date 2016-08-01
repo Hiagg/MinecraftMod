@@ -26,6 +26,7 @@ public class ModBlocks {
     public static Block CompDEmerald;
     public static Block StarBlock;
     public static Block DEStarBlock;
+    public static Block AntiQuantum;
     public static Block TestMachine;
 
     public static void mainRegistry() {
@@ -34,6 +35,7 @@ public class ModBlocks {
     }
 
     public static void initializeBlock() {
+    	AntiQuantum = new AntiQuantum();
         CompDia = new CompDia();
         CompEmerald = new CompEmerald();
         CompDEmerald = new CompDEmerald();
@@ -43,6 +45,7 @@ public class ModBlocks {
     }
 
     public static void registerItem() {
+    	GameRegistry.registerBlock(AntiQuantum, AntiQuantum.getUnlocalizedName());
         GameRegistry.registerBlock(CompDia, CompDia.getUnlocalizedName());
         GameRegistry.registerBlock(CompEmerald, CompEmerald.getUnlocalizedName());
         GameRegistry.registerBlock(CompDEmerald, CompDEmerald.getUnlocalizedName());
