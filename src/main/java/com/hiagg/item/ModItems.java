@@ -66,13 +66,14 @@ public class ModItems {
     public static Item HiaggsBoots;  // 
     public static Item HiaggsSword; //
     // Curle Items
-    public static Item CurleHelmet;
-    public static Item CurleChest;
-    public static Item CurleLegs;
-    public static Item CurleBoots;
-    public static Item QuantumBoots;
-    public static Item CurleTester;
-    public static Item CurleRefiner;
+    public static Item CurleHelmet; //
+    public static Item CurleChest; //
+    public static Item CurleLegs; //
+    public static Item CurleBoots; //
+    public static Item QuantumBoots; //
+    public static Item CurleTester; //
+    public static Item CurleRefiner; //
+    public static Item CurleSpawner;
     // Hiaggium Tools/Armor
     public static Item HiaggiumHelmet;
     public static Item HiaggiumChestplate;
@@ -100,6 +101,7 @@ public class ModItems {
     }
 
     public static void initializeItem() {
+    	CurleSpawner = new CurleSpawner();
         TestBow = new TestBow();
         DebugPick = new DebugPick(Debug).setCreativeTab(ModTabs.tabGear).setUnlocalizedName("DebugPick");
         DupePick = new DupePick(HiaggTools).setCreativeTab(ModTabs.tabGear).setUnlocalizedName("DupePick");
@@ -136,6 +138,7 @@ public class ModItems {
     }
 
     public static void registerItem() {
+    	GameRegistry.registerItem(CurleSpawner, CurleSpawner.getUnlocalizedName());
         GameRegistry.registerItem(DebugPick, DebugPick.getUnlocalizedName());
         GameRegistry.registerItem(DupePick, DupePick.getUnlocalizedName());
         GameRegistry.registerItem(SkyStick, SkyStick.getUnlocalizedName());
