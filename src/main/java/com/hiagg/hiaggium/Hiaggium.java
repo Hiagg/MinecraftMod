@@ -4,7 +4,8 @@ import com.hiagg.blocks.ModBlocks;
 import com.hiagg.creativetabs.ModTabs;
 import com.hiagg.gui.GuiHandler;
 import com.hiagg.item.ModItems;
-import com.hiagg.lib.KeyInputHandler;
+import com.hiagg.lib.KeyBindReceiver;
+import com.hiagg.lib.KeyBinds;
 import com.hiagg.lib.RefStrings;
 
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -27,11 +28,12 @@ public class Hiaggium {
         ModItems.mainRegistry();
         ModBlocks.mainRegistry();
         CraftingManager.mainRegistry();
+        FMLCommonHandler.instance().bus().register(new KeyBindReceiver());
+        KeyBinds.init();
     }
 
     @Mod.EventHandler
     public static void Load(FMLInitializationEvent event) {
-    	FMLCommonHandler.instance().bus().register(new KeyInputHandler());
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
     }
 
