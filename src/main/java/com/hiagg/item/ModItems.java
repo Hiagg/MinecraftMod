@@ -38,32 +38,41 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
 	// DO NOT USE EXPONENTS ON MATERIALS - ADD INSTANT KILLING/BREAKING CODE TO TOOLS. CAUSES INCOMPATIBILITIES
-	public static Item.ToolMaterial Debug = EnumHelper.addToolMaterial("Debug", 10, -1, 8.0f, 3.0f, 10);
     public static ItemArmor.ArmorMaterial Hiagg = EnumHelper.addArmorMaterial("Hiagg", -1, new int[]{5, 9, 7, 4}, 255);
-    public static Item.ToolMaterial HiaggTools = EnumHelper.addToolMaterial("HiaggTools", 5, -1, 10000.0F, 12.0F, 500);
-    public static Item.ToolMaterial UnrefHiaggIngot = EnumHelper.addToolMaterial("Unrefined Hiaggium Ingot", 4, 15000, 20.0f, 12.0f, 35);
     public static ItemArmor.ArmorMaterial UnrefHiaggArmor = EnumHelper.addArmorMaterial("Unrefined Hiaggium", 20000, new int[]{5, 9, 7, 4}, 35); //Infinite protection armor adds up to 25
     public static ItemArmor.ArmorMaterial HiaggiumA = EnumHelper.addArmorMaterial("HiaggiumA", -1, new int[]{12, 20, 16, 8}, 50);
+    public static ItemArmor.ArmorMaterial Curle = EnumHelper.addArmorMaterial("Curle",  -1, new int[]{12, 20, 16, 8}, 50);
+	public static Item.ToolMaterial Debug = EnumHelper.addToolMaterial("Debug", 10, -1, 8.0f, 3.0f, 10);
+    public static Item.ToolMaterial HiaggTools = EnumHelper.addToolMaterial("HiaggTools", 5, -1, 10000.0F, 12.0F, 500);
+    public static Item.ToolMaterial UnrefHiaggIngot = EnumHelper.addToolMaterial("Unrefined Hiaggium Ingot", 4, 15000, 20.0f, 12.0f, 35);
     public static Item.ToolMaterial HiaggiumT = EnumHelper.addToolMaterial("HiaggiumT", 5, -1, 10000.0f, 31.5f, 50);
     public static Item.ToolMaterial ElementalT = EnumHelper.addToolMaterial("ElementalT", 5, 5000, 12.0f, 23.5f, 30);
     // Test stuff
     public static Item TestBow;
-    public static Item SkyStick;
-    public static Item OpApple;
+    public static Item SkyStick;  //
+    public static Item OpApple;   //
     public static Item DebugPick;
     public static Item DupePick;
     public static Item IceSword;
-    public static Item MeltCompDia;
+    public static Item MeltCompDia; //
     // Items
-    public static Item UnrefHiagg;
-    public static Item Hiaggium;
-    public static Item HardRod;
+    public static Item UnrefHiagg; //
+    public static Item Hiaggium;   //
+    public static Item HardRod;    //
     // Hiagg Items
-    public static Item HiaggsHelmet;
-    public static Item HiaggsChestplate;
-    public static Item HiaggsLeggings;
-    public static Item HiaggsBoots;
-    public static Item HiaggsSword;
+    public static Item HiaggsHelmet; //
+    public static Item HiaggsChestplate; //
+    public static Item HiaggsLeggings;  //
+    public static Item HiaggsBoots;  // 
+    public static Item HiaggsSword; //
+    // Curle Items
+    public static Item CurleHelmet;
+    public static Item CurleChest;
+    public static Item CurleLegs;
+    public static Item CurleBoots;
+    public static Item QuantumBoots;
+    public static Item CurleTester;
+    public static Item CurleRefiner;
     // Hiaggium Tools/Armor
     public static Item HiaggiumHelmet;
     public static Item HiaggiumChestplate;
@@ -91,7 +100,7 @@ public class ModItems {
     }
 
     public static void initializeItem() {
-        TestBow = new Item().setCreativeTab(ModTabs.tabGear).setUnlocalizedName("TestBow");
+        TestBow = new TestBow();
         DebugPick = new DebugPick(Debug).setCreativeTab(ModTabs.tabGear).setUnlocalizedName("DebugPick");
         DupePick = new DupePick(HiaggTools).setCreativeTab(ModTabs.tabGear).setUnlocalizedName("DupePick");
         SkyStick = new Item().setUnlocalizedName("SkyStick");

@@ -7,9 +7,10 @@
  */
 package com.hiagg.creativetabs;
 
-import com.hiagg.item.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+
+import com.hiagg.item.ModItems;
 
 public class CreativeTabComponents extends CreativeTabs {
     public CreativeTabComponents(String label) {

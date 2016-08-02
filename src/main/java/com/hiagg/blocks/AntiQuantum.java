@@ -1,9 +1,9 @@
 package com.hiagg.blocks;
 
-import com.hiagg.creativetabs.ModTabs;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+
+import com.hiagg.creativetabs.ModTabs;
 
 public class AntiQuantum extends Block {
     public AntiQuantum() {

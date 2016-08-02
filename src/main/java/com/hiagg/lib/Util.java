@@ -3,7 +3,6 @@ package com.hiagg.lib;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.world.World;
 
 public class Util {
 	

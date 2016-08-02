@@ -6,11 +6,6 @@
  */
 package com.hiagg.creativetabs;
 
-import com.hiagg.creativetabs.CreativeTabBlocks;
-import com.hiagg.creativetabs.CreativeTabComponents;
-import com.hiagg.creativetabs.CreativeTabGear;
-import com.hiagg.creativetabs.CreativeTabItems;
-import com.hiagg.creativetabs.CreativeTabMachines;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class ModTabs {

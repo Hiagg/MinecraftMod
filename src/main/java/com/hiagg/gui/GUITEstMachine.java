@@ -1,11 +1,11 @@
 package com.hiagg.gui;
 
-import com.hiagg.lib.RefStrings;
-
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+
+import com.hiagg.lib.RefStrings;
 
 public class GUITEstMachine extends GuiScreen{
 	

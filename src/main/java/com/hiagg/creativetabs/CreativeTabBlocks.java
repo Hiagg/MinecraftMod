@@ -8,10 +8,11 @@
  */
 package com.hiagg.creativetabs;
 
-import com.hiagg.blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+
+import com.hiagg.blocks.ModBlocks;
 
 public class CreativeTabBlocks extends CreativeTabs {
     public CreativeTabBlocks(String label) {

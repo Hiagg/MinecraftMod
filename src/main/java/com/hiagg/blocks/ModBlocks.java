@@ -9,16 +9,8 @@
  */
 package com.hiagg.blocks;
 
-import com.hiagg.blocks.CompDEmerald;
-import com.hiagg.blocks.CompDia;
-import com.hiagg.blocks.CompEmerald;
-import com.hiagg.blocks.DEStarBlock;
-import com.hiagg.blocks.StarBlock;
-import com.hiagg.creativetabs.ModTabs;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
     public static Block CompDia;

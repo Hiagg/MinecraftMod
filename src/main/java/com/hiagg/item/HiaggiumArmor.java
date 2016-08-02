@@ -27,7 +27,9 @@ extends ItemArmor {
         if (this.renderIndex == 2) {
             return "hiaggium:textures/models/armor/hiaggium_layer_2.png";
         }
-        return "hiaggium:textures/models/armor/hiaggium_layer_1.png";
+        else {
+        	return "hiaggium:textures/models/armor/hiaggium_layer_1.png";
+        }
     }
     
     
@@ -36,24 +38,29 @@ extends ItemArmor {
     	boolean FullHiaggArmor = player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals(ModItems.HiaggiumHelmet) && player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals(ModItems.HiaggiumChestplate) && player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals(ModItems.HiaggiumLeggings) && player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals(ModItems.HiaggiumBoots);
     	
         if (FullHiaggArmor) {
-        //    player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 15, 255));
+        //  player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 15, 255));
             player.isImmuneToFire();
-     //       player.capabilities.disableDamage = true;
+        //  player.capabilities.disableDamage = true;
             player.canBreatheUnderwater();
             player.setHealth(3000);
             player.fireResistance = 20000;
             player.capabilities.allowFlying = true;
-           if (!player.isSneaking()){ player.stepHeight = 10;} else {player.stepHeight = 0;}
-            if(player.isBurning()) {
-            	player.extinguish();
+            if (!player.isSneaking()) { 
+            	player.stepHeight = 10;
+            } 
+            else {
+            	player.stepHeight = 0;
             }
-              
-        else {
-        player.capabilities.allowFlying = false;
-        player.stepHeight = 0;
-        player.fireResistance = 20;
-        } 
-        }       
+            
+            if(player.isBurning()) {
+            	    player.extinguish();
+            }
+        }
+        if(!FullHiaggArmor) {
+           player.capabilities.allowFlying = false;
+           player.stepHeight = 0;
+           player.fireResistance = 20;
+        }  
     }
     
     public void onHit(World world, EntityPlayer player, ItemStack stack, EntityMob mob, Entity entity){

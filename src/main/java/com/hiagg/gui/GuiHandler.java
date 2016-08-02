@@ -1,13 +1,12 @@
 package com.hiagg.gui;
 
-import com.hiagg.blocks.TestMachine;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
+
 import com.hiagg.blocks.tile.TestMachineContainer;
-import com.hiagg.blocks.tile.TileEntityTestMachine;
 import com.hiagg.gui.GUIs.GUInum;
 
 import cpw.mods.fml.common.network.IGuiHandler;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
 
 public class GuiHandler implements IGuiHandler {
 	 

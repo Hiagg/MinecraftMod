@@ -3,7 +3,6 @@
  */
 package com.hiagg.hiaggium;
 
-import com.hiagg.hiaggium.ServerProxy;
 
 public class ClientProxy extends ServerProxy {
     @Override
