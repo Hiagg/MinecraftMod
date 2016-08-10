@@ -20,8 +20,8 @@ import net.minecraft.item.ItemSword;
 
 public class HiaggiumSword
 extends ItemSword {
-    public HiaggiumSword(Item.ToolMaterial p_i45356_1_) {
-        super(p_i45356_1_);
+    public HiaggiumSword() {
+        super(ModItems.HiaggiumT);
         this.setUnlocalizedName("HiaggiumSword");
         this.setCreativeTab(ModTabs.tabGear);
         this.setTextureName("hiaggium:HiaggiumSword");

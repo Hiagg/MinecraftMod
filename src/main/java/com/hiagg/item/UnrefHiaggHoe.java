@@ -10,16 +10,17 @@
 package com.hiagg.item;
 
 import com.hiagg.creativetabs.ModTabs;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemHoe;
 
-public class UnrefHiaggHoe
-extends ItemHoe {
-    public UnrefHiaggHoe(Item.ToolMaterial p_i45343_1_) {
-        super(p_i45343_1_);
-        this.setUnlocalizedName("UnrefHiaggHoe").setCreativeTab(ModTabs.tabGear);
-        this.setTextureName("hiaggium:UnrefHiaggHoe");
+public class UnrefHiaggHoe extends ItemHoe {
+    public UnrefHiaggHoe() {
+        super(ModItems.UnrefHiaggIngot);
+        setUnlocalizedName("UnrefHiaggHoe");
+        setCreativeTab(ModTabs.tabGear);
+        setTextureName("hiaggium:UnrefHiaggHoe");
     }
 }
 

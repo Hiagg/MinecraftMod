@@ -23,8 +23,7 @@ public class TestBow extends ItemBow {
     private IIcon[] icons;
     
     public TestBow() {
-		setUnlocalizedName("hiaggium:TestBow");
-		setTextureName("hiaggium:TestBow");
+		setUnlocalizedName("TestBow");
 		setCreativeTab(ModTabs.tabGear);
 		setMaxDamage(3000);
 	}

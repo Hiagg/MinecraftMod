@@ -10,17 +10,17 @@
 package com.hiagg.item;
 
 import com.hiagg.creativetabs.ModTabs;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 
-public class HiaggiumAxe
-extends ItemAxe {
-    protected HiaggiumAxe(Item.ToolMaterial p_i45327_1_) {
-        super(p_i45327_1_);
-        this.setUnlocalizedName("HiaggiumAxe");
-        this.setCreativeTab(ModTabs.tabGear);
-        this.setTextureName("hiaggium:HiaggiumAxe");
+public class HiaggiumAxe extends ItemAxe {
+    public HiaggiumAxe() {
+        super(ModItems.HiaggiumT);
+        setUnlocalizedName("HiaggiumAxe");
+        setCreativeTab(ModTabs.tabGear);
+        setTextureName("hiaggium:HiaggiumAxe");
     }
 }
 

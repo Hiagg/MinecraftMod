@@ -32,8 +32,8 @@ public class DupePick extends ItemPickaxe {
 	private Item itemObj;
 	
 	
-    protected DupePick(Item.ToolMaterial Debug) {
-        super(Debug);
+    protected DupePick() {
+        super(ModItems.Debug);
         this.setTextureName("hiaggium:DupePick");
     }
     
