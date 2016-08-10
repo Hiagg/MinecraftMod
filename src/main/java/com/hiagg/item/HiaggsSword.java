@@ -28,10 +28,9 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 
-public class HiaggsSword
-extends ItemSword {
-    public HiaggsSword(Item.ToolMaterial p_i45356_1_) {
-        super(p_i45356_1_);
+public class HiaggsSword extends ItemSword {
+    public HiaggsSword() {
+        super(ModItems.HiaggTools);
         this.setUnlocalizedName("HiaggsSword");
         this.setTextureName("hiaggium:WyrmheroBlade");
         this.setFull3D();
@@ -43,25 +42,20 @@ extends ItemSword {
     }
 
     public void onItemTick(ItemStack stack, World world, EntityPlayer player) {
-    	if (player.getDisplayName().equals("Hiagg") || player.getDisplayName().equals("enigmo1")){
-    	player.addPotionEffect(new PotionEffect(Potion.heal.getId(),5, 255));
-    	}
-    	else{
-    			
-    			player.clearItemInUse();
-    			
+    	if (player.getDisplayName().equals("Hiagg") || player.getDisplayName().equals("Curle")){
+    		player.addPotionEffect(new PotionEffect(Potion.heal.getId(), 5, 255));
+    	} else {
+    		player.clearItemInUse();
     	}
     }
 
-    public void func_77624_a(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-        list.add((Object)EnumChatFormatting.GOLD + "" + (Object)EnumChatFormatting.ITALIC + "" + "This is the sword of Hiagg. No you can't touch it...Well you can for now.");
+    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
+        list.add(EnumChatFormatting.GOLD + "" + EnumChatFormatting.ITALIC + "This is the sword of Hiagg. No, you can't touch it...");
+        list.add(EnumChatFormatting.GOLD + "" + EnumChatFormatting.ITALIC + "Well, you can for now.");
     }
     
     
     public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
-    	
-    //	player.getLookVec()
-    	
     	
     	return stack;
     }

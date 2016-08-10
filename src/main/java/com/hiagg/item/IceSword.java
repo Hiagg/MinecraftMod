@@ -30,8 +30,8 @@ import net.minecraft.world.World;
 
 public class IceSword
 extends ItemSword {
-    public IceSword(Item.ToolMaterial p_i45356_1_) {
-        super(p_i45356_1_);
+    public IceSword() {
+        super(ModItems.ElementalT);
         this.setCreativeTab(ModTabs.tabGear);
         this.setUnlocalizedName("IceSword");
         this.setTextureName("hiaggium:IceSword");

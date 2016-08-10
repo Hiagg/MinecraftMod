@@ -34,22 +34,22 @@ public class ModItems {
     public static Item.ToolMaterial ElementalT = EnumHelper.addToolMaterial("ElementalT", 5, 5000, 12.0f, 23.5f, 30);
     // Test stuff
     public static Item TestBow;
-    public static Item SkyStick;  //
-    public static Item OpApple;   //
+    public static Item SkyStick;  
+    public static Item OpApple;  
     public static Item DebugPick;
     public static Item DupePick;
     public static Item IceSword;
-    public static Item MeltCompDia; //
+    public static Item MeltCompDia; 
     // Items
-    public static Item UnrefHiagg; //
-    public static Item Hiaggium;   //
-    public static Item HardRod;    //
+    public static Item UnrefHiagg; 
+    public static Item Hiaggium;   
+    public static Item HardRod;    
     // Hiagg Items
-    public static Item HiaggsHelmet; //
-    public static Item HiaggsChestplate; //
-    public static Item HiaggsLeggings;  //
-    public static Item HiaggsBoots;  // 
-    public static Item HiaggsSword; //
+    public static Item HiaggsHelmet; 
+    public static Item HiaggsChestplate; 
+    public static Item HiaggsLeggings;  
+    public static Item HiaggsBoots;  
+    public static Item HiaggsSword;     
     // Curle Items
     public static Item CurleHelmet; //
     public static Item CurleChest; //
@@ -110,16 +110,16 @@ public class ModItems {
         HiaggiumShovel = new HiaggiumShovel();
         HiaggiumAxe = new HiaggiumAxe();
         HiaggiumHoe = new HiaggiumHoe();
-        HiaggiumHelmet = new HiaggiumArmor(HiaggiumA, 0, 0).setUnlocalizedName("HiaggiumHelmet").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:HiaggiumHelmet");
-        HiaggiumChestplate = new HiaggiumArmor(HiaggiumA, 0, 1).setUnlocalizedName("HiaggiumChestplate").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:HiaggiumChestplate");
-        HiaggiumLeggings = new HiaggiumArmor(HiaggiumA, 0, 2).setUnlocalizedName("HiaggiumLeggings").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:HiaggiumLeggings");
-        HiaggiumBoots = new HiaggiumArmor(HiaggiumA, 0, 3).setUnlocalizedName("HiaggiumBoots").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:HiaggiumBoots");
-        IceSword = new IceSword(ElementalT);
-        HiaggsHelmet = new HiaggsArmor(Hiagg, 0, 0).setUnlocalizedName("HiaggsHelmet").setTextureName("hiaggium:HiaggsHelmet");
-        HiaggsChestplate = new HiaggsArmor(Hiagg, 0, 1).setUnlocalizedName("HiaggsChestplate").setTextureName("hiaggium:HiaggsChestplate");
-        HiaggsLeggings = new HiaggsArmor(Hiagg, 0, 2).setUnlocalizedName("HiaggsLeggings").setTextureName("hiaggium:HiaggsLeggings");
-        HiaggsBoots = new HiaggsArmor(Hiagg, 0, 3).setUnlocalizedName("HiaggsBoots").setTextureName("hiaggium:HiaggsBoots");
-        HiaggsSword = new HiaggsSword(HiaggTools);
+        HiaggiumHelmet = new HiaggiumHelmet();
+        HiaggiumChestplate = new HiaggiumChestplate();
+        HiaggiumLeggings = new HiaggiumLeggings();
+        HiaggiumBoots = new HiaggiumBoots();
+        IceSword = new IceSword();
+        HiaggsHelmet = new HiaggsHelmet();
+        HiaggsChestplate = new HiaggsChestplate();
+        HiaggsLeggings = new HiaggsLeggings();
+        HiaggsBoots = new HiaggsBoots();
+        HiaggsSword = new HiaggsSword();
     }
 
     public static void registerItem() {
