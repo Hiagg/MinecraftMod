@@ -41,13 +41,13 @@ public class DupePick extends ItemPickaxe {
     public boolean onBlockStartBreak(ItemStack itemstack, int i, int j, int k, EntityPlayer player) {
     	worldObj = player.worldObj;
     	itemObj = Item.getItemFromBlock(worldObj.getBlock(i, j, k));
+    	int eStack = player.inventory.getFirstEmptyStack();
     	//Add check for full inv
-    	if(player.inventory.getFirstEmptyStack() == -1) {
-    	player.inventory.addItemStackToInventory(new ItemStack(itemObj, 5)); //CRASHES PLAYER ON FULL INV!
-    	worldObj.setBlock(i, j, k, Blocks.air);
-    	}
-    	else {
-    		worldObj.setBlock(i, j, k, Blocks.bedrock);
+    	if(eStack >= 0) {
+    		player.inventory.mainInventory[eStack] = new ItemStack(itemObj, 5); //CRASHES PLAYER ON FULL INV!
+    		player.worldObj.setBlock(i, j, k, Blocks.air);
+    	} else {
+    		player.worldObj.setBlock(i, j, k, Blocks.bedrock);
     	}
     	return true;
     }
