@@ -170,6 +170,7 @@ public class RecipeRegistry {
 		GameRegistry.addSmelting(BlocksGalore.OreTopaz, new ItemStack(ItemsGalore.GemTopaz, 1), 20.0F);
 		GameRegistry.addSmelting(BlocksGalore.OreTurqoise, new ItemStack(ItemsGalore.GemTurqoise, 1), 10.0F);
 		GameRegistry.addSmelting(ItemsGalore.BlendBrass, new ItemStack(ItemsGalore.IngotBrass, 1), 20.0F);
+		GameRegistry.addSmelting(BlocksGalore.OreRhodium)), new ItemStack(ItemsGalore.IngotRhodium, 1), 30.0F);
 	}
 	
 
