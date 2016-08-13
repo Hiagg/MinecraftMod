@@ -14,12 +14,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 
-public class UnrefHiaggShovel
-extends ItemSpade {
-    public UnrefHiaggShovel(Item.ToolMaterial p_i45353_1_) {
-        super(p_i45353_1_);
-        this.setUnlocalizedName("UnrefHiaggShovel").setCreativeTab(ModTabs.tabGear);
-        this.setTextureName("hiaggium:UnrefHiaggShovel");
+public class UnrefHiaggShovel extends ItemSpade {
+    public UnrefHiaggShovel() {
+        super(ModItems.UnrefHiaggIngot);
+        setUnlocalizedName("UnrefHiaggShovel");
+        setCreativeTab(ModTabs.tabGear);
+        setTextureName("hiaggium:UnrefHiaggShovel");
     }
 }
 

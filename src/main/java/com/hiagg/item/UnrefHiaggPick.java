@@ -14,11 +14,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 
-public class UnrefHiaggPick
-extends ItemPickaxe {
-    protected UnrefHiaggPick(Item.ToolMaterial p_i45347_1_) {
-        super(p_i45347_1_);
-        this.setUnlocalizedName("UnrefHiaggPick").setCreativeTab(ModTabs.tabGear).setTextureName("hiaggium:UnrefHiaggPick");
+public class UnrefHiaggPick extends ItemPickaxe {
+    public UnrefHiaggPick() {
+        super(ModItems.UnrefHiaggIngot);
+        setUnlocalizedName("UnrefHiaggPick");
+        setCreativeTab(ModTabs.tabGear);
+        setTextureName("hiaggium:UnrefHiaggPick");
     }
 }
 

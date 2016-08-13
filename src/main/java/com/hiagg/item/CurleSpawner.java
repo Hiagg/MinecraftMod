@@ -3,7 +3,6 @@ package com.hiagg.item;
 import com.hiagg.creativetabs.ModTabs;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.inventory.GuiInventory;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -19,13 +18,11 @@ public class CurleSpawner extends Item {
 	}
 	
 	@Override
-    public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
-        if(world.isRemote) {
-        	// player.setGameType(GameType.CREATIVE);
-        	// Minecraft.getMinecraft().displayGuiScreen(new GuiInventory(player));
-        	// player.setGameType(GameType.SURVIVAL);
-        }
-    	return item;
+    public boolean onItemUse(ItemStack item, EntityPlayer player, World world, int x, int y, int z, int dim, float p, float ya, float r) {
+        player.setGameType(GameType.CREATIVE);
+		player.inventory.openInventory();
+		player.setGameType(GameType.SURVIVAL);
+		return true;
     }
 
 }

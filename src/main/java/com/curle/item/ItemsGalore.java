@@ -37,6 +37,9 @@ public class ItemsGalore {
 	public static Item GemOpal;
 	public static Item RawSpark;
 	public static Item RefinedSpark;
+	public static Item FluxPhaser;
+	public static Item InfuserBracket;
+	public static Item CoreBracket;
 	public static Item InfuserCore;
 	public static Item BlendBrass;
 	// Tools
@@ -87,6 +90,9 @@ public class ItemsGalore {
 		GemOpal = new GemOpal();
 		RawSpark = new RawSpark();
 		RefinedSpark = new RefinedSpark();
+		FluxPhaser = new FluxPhaser();
+		InfuserBracket = new InfuserBracket();
+		CoreBracket = new CoreBracket();
 		InfuserCore = new InfuserCore();
 		BlendBrass = new BlendBrass();
 		
@@ -133,6 +139,9 @@ public class ItemsGalore {
 		GameRegistry.registerItem(RawSpark, "RawSpark");
 		GameRegistry.registerItem(RefinedSpark, "RefinedSpark");
 		GameRegistry.registerItem(InfuserCore, "InfuserCore");
+		GameRegistry.registerItem(InfuserBracket, "InfuserBracket");
+		GameRegistry.registerItem(CoreBracket, "CoreBracket");
+		GameRegistry.registerItem(FluxPhaser, "FluxPhaser");
 		GameRegistry.registerItem(BlendBrass, "BlendBrass");
 		
 		GameRegistry.registerItem(SwordSpark, "SwordSpark");

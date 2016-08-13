@@ -6,7 +6,10 @@ import com.curle.block.tiles.TilesGalore;
 import com.curle.item.ItemsGalore;
 import com.curle.item.ToolMaterials;
 import com.curle.utils.Essentials;
+import com.curle.utils.RecipeRegistry;
+import com.curle.utils.WorldGeneration;
 
+import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -20,6 +23,9 @@ import cpw.mods.fml.common.event.FMLServerStoppingEvent;
 
 public class Main {
 	
+	//WorldGeneration Static
+	public static IWorldGenerator worldGen = new WorldGeneration();
+	
 	@Instance
 	public static Main instance;
 
@@ -30,6 +36,8 @@ public class Main {
 		ArmorMaterials.init();
 		BlocksGalore.init();
 		TilesGalore.init();
+		WorldGeneration.init();
+		RecipeRegistry.init();
 	}
 	
 	@EventHandler
