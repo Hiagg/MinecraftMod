@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "7.0"
-group= "com.nurgie546.allthematerials" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "materialsgalore"
+version = "~1.3"
+group= "com.hiagg, com.curle" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "hiaggium, deltaseven"
 
 minecraft {
     version = "1.7.10-10.13.2.1235"
